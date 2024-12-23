@@ -736,7 +736,7 @@ y = netflix_df_model['label']
 
 ## **4. Model Development and Evaluation** 
 
-### **4.1. Naive bayes Model Performance
+### **4.1. Naive bayes Model Performance**
 
 - Split the dataframe into training and testing sets
 
