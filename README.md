@@ -39,11 +39,10 @@ By combining time series and sentiment analysis, the project provides insights i
 - **Data Source**: Kaggle (Netflix Reviews Dataset).
 
 ### **Outcome**
-The project helps to:
-- Identify trends in Netflix’s average ratings over time.
-- Analyze user sentiment in 2024 and compare it to previous years.
-- Provide actionable insights into customer satisfaction and content preferences.
-
+- Track and Act on Trends in Ratings: Use time-series analysis to identify drops in ratings and address the root causes (content issues, performance problems, or customer expectations).
+- Focus on Customer Sentiment in 2024: Use sentiment analysis to understand the concerns of users in 2024 and take corrective actions, particularly if negative feedback outweighs the positive.
+- Improve Content and App Experience: Tailor content offerings to user preferences, and address recurring technical complaints to improve satisfaction.
+- Predict and React to User Feedback: Build a prediction model for reviews, automate sentiment analysis,
 ---
 
 ## **2. Data Overview**
