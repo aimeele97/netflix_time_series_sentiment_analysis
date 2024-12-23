@@ -583,147 +583,23 @@ netflix_df_time_series[['content', 'score']][netflix_df_time_series['thumbsUpCou
 </table>
 </div>
 
-- Some of the reviews with 1 score recently with the most thumbsup from audiences
+- Display the top 5 reviews with 1 score recently with the most thumbsup from audiences
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
+| Review Content                                                                                                                                                                                                                                                                                                | Review Date             | Thumbs Up Count |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|-----------------|
+| The minute I switched the service to include ads, the service became shoddy. It WILL NOT play ads. This happens on two different devices. Netflix stops streaming when ads begin airing with some kind of buzzing just before it shuts down the device. I'm only playing it on one device at a time. Sometimes, it does this in the middle of the show being streamed. Get it fixed, dudes! This DOES NOT happen with other apps. So don't blame it on my devices. | 2023-07-18 01:15:07     | 3502            |
+| Netflix has been pretty good for me for a long time. Last update just messed up the subtitle font shadows, so they are impossible to read against bright backgrounds. The only place to fix these are from their website - not possible to configure through the app. Very annoying, since I don't use browsers to view Netflix, since they don't support all features on all browsers. | 2022-07-28 09:24:58     | 3320            |
+| The content is fine but the app is horrible and somehow keeps getting worse. Bad interface, loading issues in menus, videos freezing, etc. Now for some reason, when I login it takes me to the "New and Hot" tab instead of the "Home" tab. As though Netflix doesn't know what a home tab is. I've had Netflix for over a decade but I'm about done with it. Not just because they aren't fixing the existing issues, but because they seem to be actively trying to make it worse. Meanwhile prices keep rising. | 2023-06-29 05:40:01     | 3224            |
+| For me, it's finally come time to move on from Netflix. Over the years, so much content has been pulled from the app (ie. Marvel/Disney) but Netflix hasn't really had much to show for it. However, they still have been introducing price increases. I understand that there will always be new streaming subscription services (Hulu, Disney+, Prime, etc) but would appreciate it if the value of a product would be tied directly to the content that is available vs. unavailable for its users. | 2023-06-22 04:46:21     | 2971            |
+| I love Netflix but as of recently, it has been glitching like no other. To the point where you just either can't watch it or get too frustrated with it. I have heard this same thing happening to family and friends. It will let you start something then instantly stop 2 seconds in and go back to the home screen. I haven't even been able to watch a full episode of anything in like a month, this is getting really ridiculous. This needs to be fixed or you will lose a lot of people! | 2023-04-03 20:06:01     | 2857            |
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>reviewId</th>
-      <th>userName</th>
-      <th>content</th>
-      <th>score</th>
-      <th>thumbsUpCount</th>
-      <th>reviewCreatedVersion</th>
-      <th>at</th>
-      <th>appVersion</th>
-      <th>month</th>
-      <th>year</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>18688</th>
-      <td>a7112c0f-c566-4d88-ac4c-9c8ce44272b6</td>
-      <td>Mike C</td>
-      <td>The minute I switched the service to include ads, the service became shoddy. It WILL NOT play ads. This happens on two different devices. Netflix stops streaming when ads begin airing with some kind of buzzing just before it shuts down the device. I'm only playing it on one device at a time. Sometimes, it does this in the middle of the show being streamed. Get it fixed, dudes! This DOES NOT happen with other apps. So don't blame it on my devices.</td>
-      <td>1</td>
-      <td>3502</td>
-      <td>8.76.0 build 8 50457</td>
-      <td>2023-07-18 01:15:07</td>
-      <td>8.76.0 build 8 50457</td>
-      <td>7</td>
-      <td>2023</td>
-    </tr>
-    <tr>
-      <th>18931</th>
-      <td>4e65ebad-7b46-48bf-8e7f-6636bc146403</td>
-      <td>Olli Sivonen</td>
-      <td>Netflix has been pretty good for me for a long time. Last update just messed up the subtitle font shadows, so they are impossible to read against bright backgrounds. The only place to fix these are from their website - not possible to configure through the app. Very annoying, since I don't use browsers to view Netflix, since they don't support all features on all browsers.</td>
-      <td>1</td>
-      <td>3320</td>
-      <td>8.33.0 build 13 50248</td>
-      <td>2022-07-28 09:24:58</td>
-      <td>8.33.0 build 13 50248</td>
-      <td>7</td>
-      <td>2022</td>
-    </tr>
-    <tr>
-      <th>18696</th>
-      <td>72d371b6-3002-444c-aa86-f4928c26f282</td>
-      <td>GoPackGo</td>
-      <td>The content is fine but the app is horrible and somehow keeps getting worse. Bad interface, loading issues in menus, videos freezing, etc. Now for some reason, when I login it takes me to the "New and Hot" tab instead of the "Home" tab. As though Netflix doesn't know what a home tab is. I've had Netflix for over a decade but I'm about done with it. Not just because they aren't fixing the existing issues, but because they seem to be actively trying to make it worse. Meanwhile prices keep rising.</td>
-      <td>1</td>
-      <td>3224</td>
-      <td>8.75.0 build 6 50446</td>
-      <td>2023-06-29 05:40:01</td>
-      <td>8.75.0 build 6 50446</td>
-      <td>6</td>
-      <td>2023</td>
-    </tr>
-    <tr>
-      <th>18738</th>
-      <td>e6ee5489-0e8d-48e3-a9e2-20205ebea0c0</td>
-      <td>Gurpreet Mumman</td>
-      <td>For me, it's finally come time to move on from Netflix. Over the years, so much content has been pulled from the app (ie. Marvel/Disney) but Netflix hasn't really had much to show for it. However, they still have been introducing price increases. I understand that there will always be new streaming subscription services (Hulu, Disney+, Prime, etc) but would appreciate it if the value of a product would be tied directly to the content that is available vs. unavailable for its users.</td>
-      <td>1</td>
-      <td>2971</td>
-      <td>8.74.0 build 6 50443</td>
-      <td>2023-06-22 04:46:21</td>
-      <td>8.74.0 build 6 50443</td>
-      <td>6</td>
-      <td>2023</td>
-    </tr>
-    <tr>
-      <th>18734</th>
-      <td>a528c73e-e15d-4474-8f81-e408acc295b3</td>
-      <td>Jaden Corpolongo</td>
-      <td>I love netflix but as of recently, it has been glitching like no other. To the point where you just either cant watch it or get too frustrated with it. I have heard this same thing happening to family and friends. It will let you start something then instantly stop 2 seconds in and go back to the home screen. I havent even been able to watch a full episode of anything in like a month, this is getting really ridiculous. This needs to be fixed or you will lose alot of people!</td>
-      <td>1</td>
-      <td>2857</td>
-      <td>8.63.0 build 16 50390</td>
-      <td>2023-04-03 20:06:01</td>
-      <td>8.63.0 build 16 50390</td>
-      <td>4</td>
-      <td>2023</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>122035</th>
-      <td>5caa794c-ba0b-42bd-a41a-956549a41b41</td>
-      <td>Tiffany Halcomb</td>
-      <td>You should be allowed to share accounts! Companies being greedy is disgusting!</td>
-      <td>1</td>
-      <td>1</td>
-      <td>8.105.0 build 15 50626</td>
-      <td>2024-03-12 19:22:14</td>
-      <td>8.105.0 build 15 50626</td>
-      <td>3</td>
-      <td>2024</td>
-    </tr>
-    <tr>
-      <th>122075</th>
-      <td>88b37b31-47f0-44f4-a7f1-78dc45991c13</td>
-      <td>Syeda masooma Moosvi</td>
-      <td>Boycott Netflix! We shia Muslims are not going to bear any kind of insult for our imam No more Netflix! #BoycotNetflix</td>
-      <td>1</td>
-      <td>1</td>
-      <td>8.108.0 build 2 50642</td>
-      <td>2024-04-02 20:02:46</td>
-      <td>8.108.0 build 2 50642</td>
-      <td>4</td>
-      <td>2024</td>
-    </tr>
-  </tbody>
-</table>
-<p>16681 rows × 10 columns</p>
-</div>
+---
+
+### Explanation:
+The table above displays user **reviews** along with the **thumbs up count** (a measure of positive feedback). This dataset provides insights into the **content quality** and **user satisfaction** based on real user feedback. The **review date** shows when the feedback was submitted, helping to track changes over time.
+
+The **thumbs up count** could be used to gauge the relative popularity or approval of the reviews. Higher thumbs up counts typically indicate that the review resonates with more users, either due to its quality or the issues it raises.
 
 
 # Plot the top 10 most frequent appVersion values
