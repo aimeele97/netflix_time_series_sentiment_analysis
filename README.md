@@ -529,7 +529,7 @@ netflix_df_time_series[['content', 'score']][netflix_df_time_series['thumbsUpCou
 </table>
 </div>
 
-- Display the top 5 reviews with 1 score recently with the most thumbsup from audiences
+- Display the top 5 most recent reviews with a score of 1, having the highest number of thumbs-ups from audiences.
 
 
 | Review Content                                                                                                                                                                                                                                                                                                | Review Date             | Thumbs Up Count |
@@ -542,7 +542,7 @@ netflix_df_time_series[['content', 'score']][netflix_df_time_series['thumbsUpCou
 
 ---
 
-### Explanation:
+### Explaination:
 The table above displays user **reviews** along with the **thumbs up count** (a measure of positive feedback). This dataset provides insights into the **content quality** and **user satisfaction** based on real user feedback. The **review date** shows when the feedback was submitted, helping to track changes over time.
 
 The **thumbs up count** could be used to gauge the relative popularity or approval of the reviews. Higher thumbs up counts typically indicate that the review resonates with more users, either due to its quality or the issues it raises.
