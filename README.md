@@ -7,7 +7,7 @@ This project analyzes a Netflix reviews dataset sourced from Kaggle, containing 
 
 2. **Sentiment Analysis**: Perform sentiment analysis on Netflix reviews to classify them as positive or negative based on the text content. The analysis helps gauge overall user sentiment toward Netflix's content and identify patterns in customer feedback, helping Netflix improve content recommendations and customer satisfaction.
 
-By combining time series and sentiment analysis, the project provides insights into how Netflix's ratings and customer sentiment have evolved, with a particular focus on the most recent user feedback in 2024.
+By combining time series and sentiment analysis, the project provides insights into how Netflix's ratings and customer sentiment have evolved over time. Focusing on reviews from 2024, it also develops models to predict whether new reviews are positive or negative based on their textual content.
 
 ---
 
