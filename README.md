@@ -19,7 +19,9 @@ By combining time series and sentiment analysis, the project provides insights i
   3.2. [Exploratory Data Analysis](#32-exploratory-data-analysis)  
   3.3. [Time Series Analysis](#33-time-series-analyis)  
   3.4. [Sentiment Analysis](#34-sentiment-analysis)  
-4. [Model Development](#4-model-development)
+4. [Model Development and Evaluation](#4-model-development-and-evaluation)  
+    4.1. [Naive bayes Model Performance](#41-naive-bayes-model-performance)  
+    4.2. [Logistic Regression Model Performance](#42-logistic-regression-model-perfomance)
 5. [Conclustion](#5-conclusion)
 
 ---
@@ -440,7 +442,7 @@ netflix_df = netflix_df.drop_duplicates()
     
 - The average rating score has gradually declined each year since 2018, with 2023 showing the lowest performance. However, there was a slight increase in the rating score in 2024.
 
-<img src="image.png" alt="alt text" width="560" />
+<img src="Netflix_Reviews_Sentiment_Analysis_files/image.png" alt="alt text" width="560" />
 
 - Display total number of people support others'review by per score
 ```python
@@ -735,7 +737,7 @@ X = pd.DataFrame(netflix_countvectorizer.toarray())
 y = netflix_df_model['label']
 ```
 
-## **4. Model Evaluation** 
+## **4. Model Development and Evaluation** 
 
 ### **4.1. Naive bayes Model Performance
 
