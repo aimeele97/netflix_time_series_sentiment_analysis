@@ -1,4 +1,4 @@
-# **Netflix Time Series and Sentiment Analysis**
+# **Netflix Reviews Sentiment Analysis**
 
 ## **Overview**
 This project analyzes a Netflix reviews dataset sourced from Kaggle, containing **122,192 records** from **May 2018 to December 2024**. The goal of the project is twofold:
@@ -802,7 +802,8 @@ print(classification_report(y_test, y_pred))
     
 
 ### 5. Conclusion
-
-- There is a slight improvement in the accuracy of the Logistic Regression model compared to the Naive Bayes model (0.88 vs. 0.87) for predicting whether a review is negative or positive in year 2024, especially as more text is added. The reviews were scored by users through rating stars, which is why the regression model was applied for this study and training purpose.
+- Netflix reviews in 2024 reveals a slight improvement in user ratings after a decline in previous years, though technical issues and content frustrations continue to drive negative sentiment. Addressing these concerns, particularly app functionality and content availability, is crucial for further enhancing customer satisfaction and retention.
+  
+- There is a slight improvement in the accuracy of the Logistic Regression model compared to the Naive Bayes model (0.88 vs. 0.87) for predicting whether a review is negative or positive in 2024, based on the review content text. However, both models perform similarly, with Logistic Regression offering a small edge in accuracy when analyzing textual data for sentiment classification.
 
 
